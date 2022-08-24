@@ -1,4 +1,12 @@
 # Javascript_Games
+You can examine some good games developed by Javascript.
+
+I used website of https://www.freecodecamp.org to build these projects.
+
+In projects there are HTML, CSS, Javascript files and some images.
+
+Enjoy the games.
+
 ### 01. Rock Paper Scissors 
 Rock paper scissors game, which is a very popular game, is included in this project.
 
