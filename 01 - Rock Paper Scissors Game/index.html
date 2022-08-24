@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rock Paper Scissors Game</title>
+    <meta name="author" content="mustafaAcikyol">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+
+        <h1>Rock Paper Scissors Game</h1>
+
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score"></span>:<span id="computer-score"></span>
+    </div>
+
+    <div class="display-choice">
+        <span id="user"></span>
+        <span id="computer"></span>
+    </div>
+
+    <div class="result">
+        <p>Let's Begin!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice">
+            <img src="img/2.png" id="r" alt="">
+        </div>
+        <div class="choice">
+            <img src="img/3.png" id="p" alt="">
+        </div>
+        <div class="choice">
+            <img src="img/4.png" id="s" alt="">
+        </div>
+    </div>
+
+    <p id="action-message">Make your move</p>
+    <p class="game-rule">The first to reach 10 wins the game</p>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
