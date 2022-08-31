@@ -42,3 +42,24 @@ Here, if strict mode is on and the user clicks on the wrong color, the game star
 However, if strict mode is not turned on, when you click on the wrong color, it starts again from the current round.
 
 When the user reaches the end of 20 rounds correctly, the user wins the game.
+
+### 03. Doodle Jump Game
+When the game starts, the doodler jumps up.
+
+When the doodler's height from the ground exceeds 200px, the platform slides down.
+
+When the height of the doodler from the ground exceeds 350px, the doodler goes down.
+
+If the doodler comes across any of the platforms during the fall, it jumps up again. When the doodler reaches a height of 200px from the jumping platform, it falls again.
+
+Right, left and up keys are used on the keyboard to control the doodler.
+
+While the doodler is moving to the right or left, when the up key is pressed, the doodler goes straight.
+
+In order to be successful in the game, while the doodler is going down, it is to make it come to any of the platforms with the arrow keys on the keyboard and go up again.
+
+The game is over when the Doodler touches the ground.
+
+When the game is over, it is written on the screen that the game is over and the score obtained.
+
+If the user wants to play again, user can click the restart button and start the game.
