@@ -1,0 +1,49 @@
+.grid {
+    width: 400px;
+    height: 600px;
+    background-color: yellow;
+    position: relative;
+    font-size: 100px;
+    margin: 0 auto;
+  }
+  
+  .doodler {
+    width: 87px;
+    height: 85px;
+    background-image: url('../img/doodler.png');
+    position: absolute;
+  }
+  
+  .platform {
+    width: 85px;
+    height: 15px;
+    background-image: url('../img/platform.png');
+    position: absolute;
+  }
+  
+  .result {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
+    padding-top: 180px;
+    margin: 0;
+  }
+
+  .restart{
+    display: block;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    color:white;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .restart:hover{
+    cursor: pointer;
+  }
+
+  
