@@ -63,3 +63,22 @@ The game is over when the Doodler touches the ground.
 When the game is over, it is written on the screen that the game is over and the score obtained.
 
 If the user wants to play again, user can click the restart button and start the game.
+
+### 04. Flappy Bird Game
+There is a 3 second countdown timer at the start of the game.
+
+After 3 seconds, the game starts.
+
+With the start of the game, the bird falls down.
+
+The space key should be pressed for the bird to go up.
+
+If the bird falls to the ground, the game is over.
+
+The bird has to pass through the obstacles in front of it.
+
+If the bird hits one of the obstacles, the game is over.
+
+When the game is over, the game is over and the score is shown on the screen.
+
+To start the game again, the restart game button should be clicked.
