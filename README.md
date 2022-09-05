@@ -82,3 +82,26 @@ If the bird hits one of the obstacles, the game is over.
 When the game is over, the game is over and the score is shown on the screen.
 
 To start the game again, the restart game button should be clicked.
+
+### 05. Memory Game
+When the game starts, 6 double images appear on the screen as inverted (12 images in total).
+
+When you click on any of the images, the image opens.
+
+After you open a image, you need to open another image.
+
+If the two images are the same, you win that round.
+
+As a result, the two images you opened disappear.
+
+Your value on the scoreboard also increases by 1.
+
+If the 2 images you clicked are not the same, you lose that tour.
+
+As a result, the 2 images you opened are upside down again.
+
+If you open all the images by matching them correctly, you will win the game.
+
+When you win the game, it is shown to you on this screen.
+
+You can click the restart game button to restart the game.
