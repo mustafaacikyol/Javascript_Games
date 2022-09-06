@@ -1,0 +1,37 @@
+.container{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.score-container{
+    margin-bottom: 25px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 312px;
+    margin: 50px auto;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    border:1px solid black;
+}
+
+.mole{
+    background-image: url('../img/mole.jpg');
+    background-size: cover;    
+}
+
+.restart{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
