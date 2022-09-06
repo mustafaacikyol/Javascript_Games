@@ -105,3 +105,22 @@ If you open all the images by matching them correctly, you will win the game.
 When you win the game, it is shown to you on this screen.
 
 You can click the restart game button to restart the game.
+
+### 06. Whack a Mole Game
+You have 60 seconds in the game.
+
+When the game starts, the backward flow of 60 seconds is shown on the screen.
+
+There is also a scoreboard on the screen.
+
+An image appears in a frame every second.
+
+In order to score points, it is necessary to click on the square where the picture is shown.
+
+The game is over when the 60-second timer has elapsed.
+
+A warning indicating the time has expired and the score received is displayed on the screen.
+
+In addition, when the game ends, the restart game button appears in order to restart the game.
+
+When the button is clicked, the game and time restarts and the button disappears.
