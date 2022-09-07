@@ -1,0 +1,34 @@
+.container{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 280px;
+    height: 240px;
+    margin: 10px auto;
+}
+
+.grid div{
+    width: 40px;
+    height: 40px;
+}
+
+.player-one{
+    background-color: red;
+    border-radius: 20px;
+}
+
+.player-two{
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.result-container{
+    padding-top: 20px;
+    height: 48px;
+}
