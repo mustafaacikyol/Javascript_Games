@@ -124,3 +124,24 @@ A warning indicating the time has expired and the score received is displayed on
 In addition, when the game ends, the restart game button appears in order to restart the game.
 
 When the button is clicked, the game and time restarts and the button disappears.
+
+### 07. Connect Four Game
+This game is played with two players.
+
+The player's turn is shown on the screen.
+
+The first player's color is red, the second player's color is blue.
+
+The rectangle seen on the screen consists of 6 rows and 7 columns and contains a total of 42 balls.
+
+In order to open the balls, it is necessary to click with the mouse inside the rectangle.
+
+It is obligatory to start the game from the bottom line and to choose a ball no more than 7 balls away from the selected balls while the game continues.
+
+If there is a selection contrary to this situation, a warning appears on the screen.
+
+If one of the players manages to open 4 red or 4 blue balls vertically, horizontally or diagonally, he wins the game.
+
+If all 42 balls are opened and there is no winner, the game ends in a draw.
+
+When the game is over, you can open the balls and start the new game.
