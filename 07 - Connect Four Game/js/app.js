@@ -3,6 +3,7 @@ const result = document.querySelector('.result');
 const squares = document.querySelectorAll('.grid div');
 
 let currentPlayer = 1;
+let endGame = false;
 
 const winningArrays = [
     [0, 1, 2, 3],
@@ -144,6 +145,7 @@ function check() {
         square4.classList.contains('player-one')) {
             
             result.textContent = 'Player One WIN the Game!';
+            endGame = true;
             gameOver();
 
         }else if (square1.classList.contains('player-two') && 
@@ -152,8 +154,31 @@ function check() {
         square4.classList.contains('player-two')) {
             
             result.textContent = 'Player Two WIN the Game!';
+            endGame = true;
             gameOver();
 
+        }
+
+    }
+
+    if (!endGame) {
+        
+        for (let i = 0; i < squares.length; i++) {
+        
+            if (!squares[i].classList.contains('taken')) {
+                
+                break;
+    
+            }
+    
+            if (i === 42) {
+                
+                result.textContent = 'Game ended in a DRAW!';
+                gameOver();
+                break;
+    
+            }
+            
         }
 
     }
