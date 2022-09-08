@@ -145,3 +145,20 @@ If one of the players manages to open 4 red or 4 blue balls vertically, horizont
 If all 42 balls are opened and there is no winner, the game ends in a draw.
 
 When the game is over, you can open the balls and start the new game.
+
+### 08. Snake Game
+Popular snake game of old mobile phones.
+
+There is a start/restart button on the game screen and a scoreboard that records the player's score.
+
+The game starts when the button is pressed.
+
+The snake moves when the game starts.
+
+Directional keys should be used to direct the movement of the snake.
+
+When the snake eats the apple, it grows one unit and its speed increases.
+
+If the snake hits the wall or itself, the game is over.
+
+When the button is pressed, the game starts again and the scoreboard is reset.
