@@ -162,3 +162,20 @@ When the snake eats the apple, it grows one unit and its speed increases.
 If the snake hits the wall or itself, the game is over.
 
 When the button is pressed, the game starts again and the scoreboard is reset.
+
+### 09. Space Invaders Game
+You can start the game by clicking the start/restart button.
+
+There is a shooter located in the lower part of the frame in the game.
+
+The shooter moves with the right and left arrow keys.
+
+He shoots with the up key.
+
+When the game starts, the total number of 30 invaders descends from the top.
+
+You can destroy the invaders by shooting with the Shooter.
+
+If one of the invaders reaches the same line as the shooter, you lose the game.
+
+If you manage to destroy all the invaders before they reach the line where the shooter is located, you win the game.
