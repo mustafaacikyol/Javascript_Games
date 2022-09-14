@@ -1,0 +1,61 @@
+.container{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.text-container{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.startbtn{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+    width: 270px;
+    height: 270px;
+    margin: 25px auto;
+}
+
+.grid div{
+    width: 30px;
+    height: 30px;
+}
+
+.end{
+    background-color: red;
+}
+
+.start{
+    background-color: blue;
+}
+
+.frog{
+    background-color: green !important;
+}
+
+.l1, .l2, .l3{
+    background-color: brown;
+}
+
+.l4, .l5{
+    background-color: lightblue;
+}
+
+.c1{
+    background-color: black;
+}
+
+.c2, .c3{
+    background-color: lightgray;
+}
