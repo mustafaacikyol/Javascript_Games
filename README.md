@@ -179,3 +179,28 @@ You can destroy the invaders by shooting with the Shooter.
 If one of the invaders reaches the same line as the shooter, you lose the game.
 
 If you manage to destroy all the invaders before they reach the line where the shooter is located, you win the game.
+
+### 10. Frogger Game
+There is a frog in the game and this frog is shown in green.
+
+The game starts from the point with the blue color box and is completed at the point with the red color box.
+
+When you click the start/restart button, the green frog appears in the blue box and the 20 second time counts down.
+
+How much time is left is shown to the user on the screen.
+
+The frog moves with the direction keys.
+
+At the first obstacle, the frog can pass over the light gray colors.
+
+If the frog lands on the box with the black obstacle, the game is over and the user loses the game.
+
+At the second obstacle, the frog can pass over brown boxes.
+
+If the frog lands on one of the light blue colors, the game is over and the user loses the game.
+
+If the frog successfully passes both obstacles and reaches the red box, which is the end point, within 20 seconds, he wins the game.
+
+When the start/pause button is clicked while the game is in progress, the game and the time stop.
+
+When the button is pressed again after the game is stopped, the game and the time continue from where it left off.
