@@ -204,3 +204,26 @@ If the frog successfully passes both obstacles and reaches the red box, which is
 When the start/pause button is clicked while the game is in progress, the game and the time stop.
 
 When the button is pressed again after the game is stopped, the game and the time continue from where it left off.
+
+### 11. Tetris Game
+When the game is opened, the tetris screen appears.
+
+On the side of the Tetris screen, there is a box showing the next item.
+
+In addition, the score and the number of deleted lines are displayed on the screen.
+
+You can start and stop the game by clicking the Start/Pause button.
+
+Items come down from the top of the Tetris screen.
+
+Items can be controlled with the direction keys.
+
+While the up arrow key rotates the items, the item is given direction with the left, right and down arrow keys.
+
+If a whole line is filled, that line disappears, 10 score points are taken and 1 line point is taken.
+
+If any of the items stay at the top of the tetris screen and cannot go down, the game is over.
+
+A text indicating that the game is over is displayed under the start/pause button.
+
+You can start the new game by clicking the game start/pause button.
