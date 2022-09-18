@@ -12,9 +12,9 @@ let invadersTakenDown = [];
 let invaders;
 
 function createGrid() {
-    
-    for (let i = 0; i < width*width; i++) {
-        
+
+    for (let i = 0; i < width * width; i++) {
+
         const divElement = document.createElement('div');
         grid.appendChild(divElement);
 
@@ -28,6 +28,9 @@ const squares = document.querySelectorAll('.grid div');
 
 function start() {
 
+    document.addEventListener('keydown', moveShooter);
+    document.addEventListener('keydown', shoot);
+
     if (currentShooterIndex) squares[currentShooterIndex].classList.remove('shooter');
 
     if (invaders) {
@@ -39,7 +42,6 @@ function start() {
         }
 
     }
-
 
     clearInterval(moveInvadersID);
     result.textContent = '';
@@ -91,12 +93,12 @@ function moveInvaders() {
     for (let i = 0; i < invaders.length; i++) {
 
         if (!invadersTakenDown.includes(i)) {
-            
+
             squares[invaders[i]].classList.add('invader');
 
         }
 
-        if (invaders[i] >= width*width - (width*3) && squares[invaders[i]].classList.contains('invader')) gameOver();
+        if (invaders[i] >= width * width - (width * 3) && squares[invaders[i]].classList.contains('invader')) gameOver();
 
     }
 
@@ -121,80 +123,81 @@ function moveShooter(e) {
 }
 
 function win() {
-    
+
     clearInterval(moveInvadersID);
     result.textContent = 'You WIN the Game!';
+    document.removeEventListener('keydown', moveShooter);
+    document.removeEventListener('keydown', shoot);
 
 }
 
 function gameOver() {
-    
+
     clearInterval(moveInvadersID);
     result.textContent = 'Game Over! You LOSE!';
+    document.removeEventListener('keydown', moveShooter);
+    document.removeEventListener('keydown', shoot);
 
 }
 
 
-function shoot() {
+function shoot(e) {
 
-    let moveLaserID;
-    let currentLaserIndex = currentShooterIndex;
+    if (e.key === 'ArrowUp') {
 
-    function moveLaser() {
+        let moveLaserID;
+        let currentLaserIndex = currentShooterIndex;
 
-        squares[currentLaserIndex].classList.remove('laser');
-
-        if (currentLaserIndex < width) {
-
-            return clearInterval(moveLaserID);
-
-        }
-
-        startRestartBtn.addEventListener('click' , () => {
-
-            clearInterval(moveLaserID);
-            for (let i = 0; i < width*width; i++) {
-               
-               squares[i].classList.remove('laser');
-
-            }
-            
-        });
-
-        currentLaserIndex -= width;
-        squares[currentLaserIndex].classList.add('laser');
-
-        if (squares[currentLaserIndex].classList.contains('invader')) {
+        function moveLaser() {
 
             squares[currentLaserIndex].classList.remove('laser');
-            squares[currentLaserIndex].classList.remove('invader');
-            squares[currentLaserIndex].classList.add('boom');
-            clearInterval(moveLaserID);
-            score++;
-            scoreElement.textContent = score;
-            const removedItem = invaders.indexOf(currentLaserIndex);
-            invadersTakenDown.push(removedItem);
 
-            if (invadersTakenDown.length === invaders.length) win();
+            if (currentLaserIndex < width) {
 
-            setTimeout(function () {
-                squares[currentLaserIndex].classList.remove('boom');
-            }, 70)
+                return clearInterval(moveLaserID);
+
+            }
+
+            startRestartBtn.addEventListener('click', () => {
+
+                clearInterval(moveLaserID);
+                for (let i = 0; i < width * width; i++) {
+
+                    squares[i].classList.remove('laser');
+
+                }
+
+            });
+
+            currentLaserIndex -= width;
+            squares[currentLaserIndex].classList.add('laser');
+
+            if (squares[currentLaserIndex].classList.contains('invader')) {
+
+                squares[currentLaserIndex].classList.remove('laser');
+                squares[currentLaserIndex].classList.remove('invader');
+                squares[currentLaserIndex].classList.add('boom');
+                clearInterval(moveLaserID);
+                score++;
+                scoreElement.textContent = score;
+                const removedItem = invaders.indexOf(currentLaserIndex);
+                invadersTakenDown.push(removedItem);
+
+                if (invadersTakenDown.length === invaders.length) win();
+
+                setTimeout(function () {
+                    squares[currentLaserIndex].classList.remove('boom');
+                }, 70)
+
+            }
 
         }
 
-    }
+        moveLaserID = setInterval(moveLaser, 100);
 
-    moveLaserID = setInterval(moveLaser, 100);
+    }
 
 }
 
-
 startRestartBtn.addEventListener('click', start);
-document.addEventListener('keydown', moveShooter);
-document.addEventListener('keydown', e => {
-    if (e.key === 'ArrowUp') {
-        shoot();
-    }
-});
 
