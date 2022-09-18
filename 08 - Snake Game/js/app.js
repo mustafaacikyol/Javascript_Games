@@ -1,4 +1,4 @@
-const squares = document.querySelectorAll('.grid div');
+const grid = document.querySelector('.grid');
 const score = document.querySelector('.score');
 const startRestartBtn = document.querySelector('.start');
 
@@ -6,12 +6,26 @@ let currentIndex;
 let currentSnake;
 let appleIndex = 0;
 let point;
-let width;
+let width = 20;
 let direction;
 let speed;
 let interval;
 let intervalTime;
 
+function createGrid() {
+    
+    for (let i = 0; i < width*width; i++) {
+        
+        const divElement = document.createElement('div');
+        grid.appendChild(divElement);
+
+    }
+
+}
+
+createGrid();
+
+const squares = document.querySelectorAll('.grid div');
 
 function startRestartGame() {
     
