@@ -1,6 +1,6 @@
 const scoreElement = document.querySelector('.score');
 const result = document.querySelector('.result');
-const squares = document.querySelectorAll('.grid div');
+const grid = document.querySelector('.grid');
 const startRestartBtn = document.querySelector('.start-restart');
 
 let score;
@@ -11,6 +11,20 @@ let moveInvadersID;
 let invadersTakenDown = [];
 let invaders;
 
+function createGrid() {
+    
+    for (let i = 0; i < width*width; i++) {
+        
+        const divElement = document.createElement('div');
+        grid.appendChild(divElement);
+
+    }
+
+}
+
+createGrid();
+
+const squares = document.querySelectorAll('.grid div');
 
 function start() {
 
@@ -25,6 +39,7 @@ function start() {
         }
 
     }
+
 
     clearInterval(moveInvadersID);
     result.textContent = '';
@@ -135,6 +150,17 @@ function shoot() {
 
         }
 
+        startRestartBtn.addEventListener('click' , () => {
+
+            clearInterval(moveLaserID);
+            for (let i = 0; i < width*width; i++) {
+               
+               squares[i].classList.remove('laser');
+
+            }
+            
+        });
+
         currentLaserIndex -= width;
         squares[currentLaserIndex].classList.add('laser');
 
@@ -171,5 +197,4 @@ document.addEventListener('keydown', e => {
         shoot();
     }
 });
-
 
